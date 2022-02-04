@@ -6,6 +6,8 @@ import { SiGmail } from 'react-icons/si'
 import About from './components/About'
 import Contact from './components/Contact'
 import ProfilePic from './Picture/Profilephoto.jpeg'
+import nomnom from './Picture/Finish.002.jpeg'
+import Socap from './Picture/SoCap-3_copy.png'
 function App() {
   return (
     <div className="App">
@@ -36,6 +38,27 @@ function App() {
           <Route path="/" />
           <Route path="/About" component={About} />
           <Route path="/Contact" component={Contact} />
+        </div>
+        <br />
+
+        <h2 className="fw-bolder">PORTFOLIO</h2>
+        <div>
+          <Button
+            target="_blank"
+            href="https://nom-nom-recipes-1018.herokuapp.com/"
+            variant="outline-*"
+          >
+            <p className="font-italic fw-bold">NomNom</p>
+            <img src={nomnom} alt="nomnom" className="rounded " id="nomnom" />
+          </Button>
+          <Button
+            target="_blank"
+            href="http://shtsxh.herokuapp.com/"
+            variant="outline-*"
+          >
+            <p className="font-italic fw-bold">SoCap</p>
+            <img src={Socap} alt="Socap" className="rounded " id="nomnom" />
+          </Button>
         </div>
       </main>
       <footer>
