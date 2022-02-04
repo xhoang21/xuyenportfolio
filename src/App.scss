@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+#profpic {
+  height: 100px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(167, 136, 196);
+}
+
+#navbar {
+  background-color: rgb(167, 136, 196);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(167, 136, 196);
+  color: white;
+  text-align: center;
+}
+
+#aboutcontact {
+  font-size: 20px;
+}
