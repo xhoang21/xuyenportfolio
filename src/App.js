@@ -8,21 +8,24 @@ import Contact from './components/Contact'
 import ProfilePic from './Picture/Profilephoto.jpeg'
 import nomnom from './Picture/Finish.002.jpeg'
 import Socap from './Picture/SoCap-3_copy.png'
+import logo from './Picture/cover.png'
 function App() {
   return (
     <div className="App">
       <Navbar expand="lg" sticky="top" className="mb-5" id="navbar">
-        <Container fluid className="mx-5">
+        <Container fluid className="mx-5 px-5">
           <Navbar.Brand className="navbar-logo " href="/">
-            <p className="font-weight-bold">
-              <strong>Xuyen Hoang</strong>
-            </p>
+            <img src={logo} alt="logo" id="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto m" id="aboutcontact">
-              <Nav.Link href="/About">About</Nav.Link>
-              <Nav.Link href="/Contact">Contact</Nav.Link>
+              <Nav.Link href="/About">
+                <strong>About</strong>
+              </Nav.Link>
+              <Nav.Link href="/Contact">
+                <strong>Contact</strong>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
