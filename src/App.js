@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <Navbar expand="lg" sticky="top" className="mb-5" id="navbar">
         <Container fluid>
-          <Navbar.Brand className="navbar-logo" href="/">
-            Xuyen Hoang
+          <Navbar.Brand className="navbar-logo " href="/">
+            <p className="font-weight-bold">Xuyen Hoang</p>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
