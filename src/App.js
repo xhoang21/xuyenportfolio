@@ -12,13 +12,15 @@ function App() {
   return (
     <div className="App">
       <Navbar expand="lg" sticky="top" className="mb-5" id="navbar">
-        <Container fluid>
+        <Container fluid className="mx-5">
           <Navbar.Brand className="navbar-logo " href="/">
-            <p className="font-weight-bold">Xuyen Hoang</p>
+            <p className="font-weight-bold">
+              <strong>Xuyen Hoang</strong>
+            </p>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto" id="aboutcontact">
+            <Nav className="ms-auto m" id="aboutcontact">
               <Nav.Link href="/About">About</Nav.Link>
               <Nav.Link href="/Contact">Contact</Nav.Link>
             </Nav>
@@ -27,13 +29,15 @@ function App() {
       </Navbar>
 
       <main>
+        <h1 className="m-3 mb-5">
+          <u>Xuyen Hoang</u>
+        </h1>
         <img
           src={ProfilePic}
           alt="ProfilePic"
-          className="rounded-circle  justify-content-center mb-3"
+          className="rounded-circle  justify-content-center mb-5"
           id="profpic"
         />
-        <h1 className="m-3 ">Xuyen Hoang</h1>
         <div>
           <Route path="/" />
           <Route path="/About" component={About} />
@@ -41,7 +45,9 @@ function App() {
         </div>
         <br />
 
-        <h2 className="fw-bolder mb-2">PORTFOLIO</h2>
+        <h2 className="fw-bolder mb-2 mt-3">
+          <u>PORTFOLIO</u>
+        </h2>
         <div className="mt-3">
           <Button
             target="_blank"

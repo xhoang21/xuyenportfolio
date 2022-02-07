@@ -1,9 +1,10 @@
 import React from 'react'
+import '../App.scss'
 
 function About(props) {
   return (
-    <div className="card-body px-5 mx-5">
-      <p className="card-text  px-5 mx-5">
+    <div id="about" className="card-body px-5 mx-5 border rounded">
+      <p className="card-text  px-5 mx-5 mb-3">
         Software Engineer and Chef with a combined 14+ years of experience in
         mentoring a team, conducting operational and inventory logistics,
         creating full stack applications. <br />
