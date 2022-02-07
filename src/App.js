@@ -30,10 +30,10 @@ function App() {
         <img
           src={ProfilePic}
           alt="ProfilePic"
-          className="rounded-circle  justify-content-center"
+          className="rounded-circle  justify-content-center mb-3"
           id="profpic"
         />
-        <h1>Xuyen Hoang</h1>
+        <h1 className="m-3 ">Xuyen Hoang</h1>
         <div>
           <Route path="/" />
           <Route path="/About" component={About} />
@@ -41,8 +41,8 @@ function App() {
         </div>
         <br />
 
-        <h2 className="fw-bolder">PORTFOLIO</h2>
-        <div>
+        <h2 className="fw-bolder mb-2">PORTFOLIO</h2>
+        <div className="mt-3">
           <Button
             target="_blank"
             href="https://nom-nom-recipes-1018.herokuapp.com/"
@@ -60,36 +60,35 @@ function App() {
             <img src={Socap} alt="Socap" className="rounded " id="nomnom" />
           </Button>
         </div>
+        <div></div>
+        <div className="m-5">
+          <Button
+            target="_blank"
+            href="https://github.com/xhoang21"
+            variant="outline-*"
+          >
+            <BsGithub size={30} className="m-3" />
+          </Button>
+
+          <Button
+            target="_blank"
+            href="https://www.linkedin.com/in/xuyen-hoang/"
+            variant="outline-*"
+          >
+            <BsLinkedin size={30} className="m-3" />
+          </Button>
+
+          <Button
+            target="_blank"
+            href="mailto:xhoang21@gmail.com"
+            variant="outline-*"
+          >
+            <SiGmail size={30} />
+          </Button>
+        </div>
       </main>
-      <footer>
-        <small>
-          <div className="mr-1">
-            <Button
-              target="_blank"
-              href="https://github.com/xhoang21"
-              variant="outline-*"
-            >
-              <BsGithub size={30} className="m-3" />
-            </Button>
-
-            <Button
-              target="_blank"
-              href="https://www.linkedin.com/in/xuyen-hoang/"
-              variant="outline-*"
-            >
-              <BsLinkedin size={30} className="m-3" />
-            </Button>
-
-            <Button
-              target="_blank"
-              href="mailto:xhoang21@gmail.com"
-              variant="outline-*"
-            >
-              <SiGmail size={30} />
-            </Button>
-          </div>
-          &copy; Xuyen Hoang | 2021
-        </small>
+      <footer className="mt-5">
+        <small>&copy; Xuyen Hoang | 2021</small>
       </footer>
     </div>
   )
