@@ -3,12 +3,14 @@ import { Route, Link } from 'react-router-dom'
 import { Button, Stack, Navbar, Nav, Container } from 'react-bootstrap'
 import { BsGithub, BsLinkedin } from 'react-icons/bs'
 import { SiGmail } from 'react-icons/si'
-import About from './components/About'
-import Contact from './components/Contact'
+import About from './Components/About'
+import Contact from './Components/Contact'
 import ProfilePic from './Picture/Profilephoto.jpeg'
 import nomnom from './Picture/Finish.002.jpeg'
 import Socap from './Picture/SoCap-3_copy.png'
 import logo from './Picture/cover.png'
+import React from 'react'
+
 function App() {
   return (
     <div className="App">
@@ -20,12 +22,12 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto m" id="aboutcontact">
-              <Nav.Link href="/About">
+              <Link to="/About" className="mx-3 link-dark">
                 <strong>About</strong>
-              </Nav.Link>
-              <Nav.Link href="/Contact">
+              </Link>
+              <Link to="/Contact" className="mx-3 link-dark">
                 <strong>Contact</strong>
-              </Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -43,8 +45,8 @@ function App() {
         />
         <div>
           <Route path="/" />
-          <Route path="/About" component={About} />
-          <Route path="/Contact" component={Contact} />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/Contact" component={Contact} />
         </div>
         <br />
 
