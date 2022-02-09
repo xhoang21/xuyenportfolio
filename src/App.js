@@ -72,7 +72,7 @@ function App() {
           </Button>
         </div>
         <div></div>
-        <div className="m-5">
+        <div className="m-5 pb-5">
           <Button
             target="_blank"
             href="https://github.com/xhoang21"
